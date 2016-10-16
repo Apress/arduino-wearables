@@ -1,0 +1,1 @@
+int sound=18;void setup(){  Serial.begin(9600);  pinMode(18, INPUT); } void loop(){Serial.println(analogRead(sound));   delay(200);     }

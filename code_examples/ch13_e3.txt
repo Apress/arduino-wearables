@@ -1,0 +1,1 @@
+int randomNbr=0; void setup() { Serial.begin(9600); randomSeed(analogRead(0)); }void loop() {  randomNbr=random(5,20);   Serial.println(randomNbr);  delay(500);}

@@ -1,0 +1,1 @@
+int waterSensor = 3;  int led = 13; int waterValue = 0;          void setup() {  Serial.begin(9600);   pinMode(led,OUTPUT); }void loop() {  waterValue = analogRead(waterSensor);    Serial.println(waterValue);   if(waterValue < 500){  digitalWrite(led, HIGH);   }else{   digitalWrite(led,LOW);     }                } 

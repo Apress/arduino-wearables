@@ -1,0 +1,1 @@
+int zipperValue=0;int zipperPin=0;void setup(){ Serial.begin(9600); }void loop(){ zipperValue=analogRead(zipperPin); if(zipperValue<1000){   int newZipperValue=map(zipperValue, 0, 1023, 0, 2000);      Serial.println(newZipperValue);   delay(300);   }}  

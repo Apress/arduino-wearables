@@ -1,0 +1,1 @@
+int flower=10;void setup(){  pinMode(flower,OUTPUT);  }void loop(){ digitalWrite(flower,HIGH); delay(10000);  digitalWrite(flower,LOW);  delay(30000);   }

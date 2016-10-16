@@ -1,0 +1,1 @@
+int wire[]={2,3,4,5}; int randomPin=0;int randomTime=0; void setup(){  for(int i=0; i<5; i++){    pinMode(wire[i],OUTPUT);    }  randomSeed(analogRead(0));}void loop(){  randomPin=random(0,5);   randomTime=random(100,500);  digitalWrite(wire[randomPin],HIGH);  delay(randomTime);  digitalWrite(wire[randomPin],LOW);  delay(randomTime); }

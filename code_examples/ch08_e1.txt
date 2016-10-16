@@ -1,0 +1,1 @@
+int zipperValue=0;int zipperPin=0;void setup(){ Serial.begin(9600); }void loop(){ zipperValue=analogRead(zipperPin); Serial.println(zipperValue); delay(300);  }
